@@ -9,10 +9,10 @@ A simple multi-page website built with Bootstrap 5. Includes homepage, registrat
 - Maniell Ivan Gacasan
 
 ## 📷 Screenshots
-![Homepage](assets/images/homepage.jpg)
-![Register](assets/images/register.jpg)
-![Login](assets/images/login.jpg)
-![Forgot Password](assets/images/forgot.jpg)
+![Homepage](assets/css/images/homepage.jpg)
+![Register](assets/css/images/register.jpg)
+![Login](assets/css/images/login.jpg)
+![Forgot Password](assets/css/images/forgot.jpg)
 
 ## 🌍 Live Demo
 [GitHub Pages Demo](https://AndreiGuinocor.github.io/fyntracker/)
