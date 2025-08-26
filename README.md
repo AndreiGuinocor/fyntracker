@@ -9,10 +9,10 @@ A simple multi-page website built with Bootstrap 5. Includes homepage, registrat
 - Maniell Ivan Gacasan
 
 ## 📷 Screenshots
-![Homepage](assets/images/homepage.png)
-![Register](assets/images/register.png)
-![Login](assets/images/login.png)
-![Forgot Password](assets/images/forgot.png)
+![Homepage](assets/images/homepage.jpg)
+![Register](assets/images/register.jpg)
+![Login](assets/images/login.jpg)
+![Forgot Password](assets/images/forgot.jpg)
 
 ## 🌍 Live Demo
-[GitHub Pages Demo](https://your-username.github.io/bootstrap-multipage-site/)
+[GitHub Pages Demo](https://AndreiGuinocor.github.io/fyntracker/)
