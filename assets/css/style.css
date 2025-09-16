@@ -1,0 +1,179 @@
+/* ============================================================
+   FynTracker Theme — Blue + Light Gray
+   assets/css/style.css
+   ============================================================ */
+
+/* ========== Imports & Variables ========== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+:root {
+  --nav-dark-1: #0f172a;
+  --nav-blue: #1e3a8a;
+  --accent-blue: #2563eb;
+  --muted: #6b7280;
+  --bg-light: #f8fafc;
+  --card-radius: 12px;
+}
+
+/* ========== Base ========== */
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg-light);
+  color: var(--nav-dark-1);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========== Navbar ========== */
+.navbar {
+  background: linear-gradient(90deg, var(--nav-dark-1), var(--nav-blue));
+  box-shadow: 0 2px 6px rgba(2, 6, 23, 0.12);
+}
+
+.navbar .navbar-brand {
+  font-weight: 700;
+  color: #fff !important;
+}
+
+.navbar-nav .nav-link {
+  color: rgba(241, 245, 249, 0.95) !important;
+  margin-left: 12px;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff !important;
+}
+
+/* ========== Buttons ========== */
+.btn-primary {
+  background: var(--accent-blue);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.btn-light {
+  background: #ffffff;
+  color: var(--nav-blue);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  font-weight: 600;
+}
+
+/* ========== Hero (Homepage) ========== */
+.hero-section {
+  background: linear-gradient(135deg, var(--nav-dark-1) 0%, var(--nav-blue) 100%);
+  color: #fff;
+  min-height: 72vh;
+  display: flex;
+  align-items: center;
+}
+
+/* ========== Features & Cards ========== */
+.card {
+  border-radius: var(--card-radius);
+}
+
+.feature-card {
+  border-radius: 14px;
+  background: #fff;
+  padding: 28px;
+  transition: all 0.28s cubic-bezier(.2,.8,.2,1);
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 40px rgba(16, 24, 40, 0.08);
+}
+
+.feature-icon {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, var(--accent-blue), #1d4ed8);
+  color: #fff;
+  font-size: 28px;
+}
+
+/* ========== Testimonials ========== */
+.testimonial {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(2, 6, 23, 0.09);
+}
+
+/* ========== Footer ========== */
+footer {
+  background: #0b1220;
+  color: #cbd5e1;
+}
+
+/* ========== Auth Pages (Login/Register/Forgot) ========== */
+.auth-page {
+  min-height: calc(100vh - 64px); /* Account for navbar */
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.06), rgba(30, 58, 138, 0.03));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 480px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 18px 40px rgba(2, 6, 23, 0.12);
+}
+
+.auth-card h2 {
+  font-size: 28px;
+  margin-bottom: 18px;
+  text-align: center;
+  color: var(--nav-dark-1);
+  font-weight: 700;
+}
+
+.form-label {
+  color: var(--nav-dark-1);
+  font-weight: 600;
+}
+
+.form-control {
+  border-radius: 8px;
+}
+
+.auth-card a {
+  color: var(--accent-blue);
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.auth-card a:hover {
+  color: #1d4ed8;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 576px) {
+  .auth-card { padding: 20px; }
+  .hero-section { padding: 40px 10px; }
+}
